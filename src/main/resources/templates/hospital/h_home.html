@@ -3,10 +3,11 @@
 
 <head>
     <meta charset='utf-8'>
-    <title>Meow</title>
+    <title>병원제목</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href='home.css'>
     <link rel='icon' type="image/png" href="cat.png">
+    <script type="text/javascript" src="home.js"></script>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
 
     </header>
 
-    <!-- 메인 네비게이션 바 (메뉴) -->
+    <!-- 네비게이션 바 (메뉴) -->
     <nav>
         <a href="h_menu">진료과/의료진</a>
         <a href="#">예약/조회</a>
@@ -46,53 +47,52 @@
         <a href="#">FAQ</a>
     </nav>
 
+    <!-- 메인 콘텐츠 영역 -->
     <main>
+        <!-- 병원 소개 슬라이드 -->
         <section id="main_slide">
-
             <button id="left" onclick="plusDivs(-1, 0)">&#10094;</button>
-
             <div class="slide" style="display: block;">
                 <img class="slide_img" src="main_slide1.jpg" alt="slide_img">
                 <div class="text-block">
-                    <h3>언제나</h3>
-                    <p><b>Anytime</b></p>
+                    언제나
+                    <br>
+                    Anytime
                 </div>
             </div>
-
             <div class="slide" style="display: none">
                 <img class="slide_img" src="main_slide2.jpg" alt="slide_img">
                 <div class="text-block">
-                    <h3>언제나</h3>
-                    <p><b>Anytime</b></p>
+                    언제나
+                    <br>
+                    Anytime
                 </div>
             </div>
-
             <div class="slide" style="display: none">
                 <img class="slide_img" src="main_slide3.jpg" alt="slide_img">
                 <div class="text-block">
-                    <h3>언제나</h3>
-                    <p><b>Anytime</b></p>
+                    언제나
+                    <br>
+                    Anytime
                 </div>
             </div>
             <button id="right" onclick="plusDivs(1, 0)">&#10095;</button>
-
         </section>
 
+        <!--광고 배너 영역-->
         <section id="ad">
-
             <div class="item">
                 TEL : 000-000-0000
             </div>
-
             <div class="item">
-                TEL : 000-000-0000
+                광고 문구 삽입
             </div>
-
             <div class="item">
-                TEL : 000-000-0000
+                자동 슬라이드 삽입
             </div>
-
         </section>
+
+        <!--공지 게시판 -->
         <section id="board_left">
                 <a class="board_nav" href="#">공지사항</a>
                 <a class="board_nav" href="#">채용안내</a>
@@ -138,6 +138,7 @@
                 <button class="more">더보기</button>
         </section>
 
+<!--        병원 소개 게시판-->
         <section id="board_right">
             <a class="board_nav" href="#">뉴스</a>
             <a class="board_nav" href="#">건강정보</a>
@@ -178,7 +179,9 @@
 
     </main>
 
+<!--    푸터-->
     <footer>
+<!--        주소-->
         <div id="address">
             <ul>
                 <li>주소 : XXX-XXXX</li>
@@ -186,6 +189,8 @@
                 <li>대표전화 : XXX-XXXX-XXXX</li>
             </ul>
         </div>
+
+<!--        sns 링크-->
         <div id="sns">
             <ul>
                 <li>페북 아이콘</li>
