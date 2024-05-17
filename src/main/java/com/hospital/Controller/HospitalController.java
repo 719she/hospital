@@ -8,6 +8,6 @@ public class HospitalController {
 
     @GetMapping("/")
     public String home() {
-        return "hospital_home;
+        return "hospital_home";
     }
 }
