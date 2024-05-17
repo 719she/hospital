@@ -16,9 +16,18 @@ public class HospitalController {
 
     @PostMapping ("/")
     public String login(UserDto userDto) {
-        if(userDto.getId()=="1111" && userDto.getPassword()=="1111") {
+        System.out.println(userDto.getId());
+        System.out.println(userDto.getPassword());
+        if((userDto.getId().equals("1111")) && (userDto.getPassword().equals("1111"))) {
             return "hospital/h_1111";
         }
-        return "redirect:/";
+        else
+            return "redirect:/";
     }
+
+    @GetMapping("/h_menu")
+    public String menu() {
+        return "hospital/h_menu";
+    }
+
 }
